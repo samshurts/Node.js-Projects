@@ -1,5 +1,8 @@
 const [first, ...restOfItems] = [10, 20, 30, 40];
 
+const newArray = [...restOfItems];
+
+
 const data = {
   temp1: '001',
   temp2: '002',
@@ -9,8 +12,15 @@ const data = {
 
 const { temp1, temp2, ...person } = data;
 
-const newArray = [...restOfItems];
-
 const newObject = {
   ...person,
 };
+
+
+console.log(restOfItems);
+
+console.log(newArray);
+
+console.log(person);
+
+console.log(newObject);

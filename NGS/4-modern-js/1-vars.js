@@ -1,5 +1,8 @@
 {
   // Block Scope
+  {
+    //Nested block scope
+  }
 }
 
 if (true) {

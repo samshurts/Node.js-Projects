@@ -7,3 +7,5 @@ const html = `
     ${Math.random()}
   </div>
 `;
+
+console.log(html);
