@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "$env:DEBUG = 'app' & nodemon app.js",
-    "debug": "$env:DEBUG = '*' & nodemon app.js"
+    "start": "set DEBUG=app & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js"
   },
   "author": "SFKS",
   "license": "ISC",
