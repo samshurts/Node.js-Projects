@@ -11,7 +11,7 @@ module.exports = function localStrategy() {
                 passwordField: 'password'
             },
             (username, password, done) => {
-                const url = 'mongodb+srv://sfks:winterfell2@globomantics.n1d8hmc.mongodb.net?retryWrites=true&w=majority';
+                const url = 'mongodb+srv://sfks:<INSERT PASSWORD HERE (lowercase + 2)>@globomantics.n1d8hmc.mongodb.net?retryWrites=true&w=majority';
                 const dbName = 'globomantics';
 
                 (async function validateUser() {

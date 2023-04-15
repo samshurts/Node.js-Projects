@@ -16,7 +16,7 @@ sessionsRouter.use((req, res, next) => {
 });
 
 sessionsRouter.route('/').get((req, res) => {
-    const url = 'mongodb+srv://sfks:winterfell2@globomantics.n1d8hmc.mongodb.net?retryWrites=true&w=majority';
+    const url = 'mongodb+srv://sfks:<INSERT PASSWORD HERE (lowercase + 2)>@globomantics.n1d8hmc.mongodb.net?retryWrites=true&w=majority';
     const dbName = 'globomantics';
 
     (async function mongo() {
@@ -40,7 +40,7 @@ sessionsRouter.route('/').get((req, res) => {
 
 sessionsRouter.route('/:id').get((req, res) => {
     const id = req.params.id;
-    const url = 'mongodb+srv://sfks:winterfell2@globomantics.n1d8hmc.mongodb.net?retryWrites=true&w=majority';
+    const url = 'mongodb+srv://sfks:<INSERT PASSWORD HERE (lowercase + 2)>@globomantics.n1d8hmc.mongodb.net?retryWrites=true&w=majority';
     const dbName = 'globomantics';
 
     (async function mongo() {
