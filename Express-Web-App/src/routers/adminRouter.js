@@ -1,6 +1,7 @@
 const express = require('express');
 const debug = require('debug')('app:adminRouter');
 const { MongoClient } = require('mongodb');
+
 const sessions = require('../data/sessions.json');
 
 const adminRouter = express.Router();
